@@ -10,24 +10,25 @@
 
 ![Untitled](https://user-images.githubusercontent.com/66931820/124347371-5bf7de80-dc1f-11eb-8328-2ac73c84bc4c.png)
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/055af83e-be6e-4cda-beca-48a366b78259/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/055af83e-be6e-4cda-beca-48a366b78259/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/66931820/124347401-91043100-dc1f-11eb-84a1-19999c47e684.png)
 
 3. 다운로드 된 파일을 실행하신 후 설치 화면에서 가장 아래에 있는 '**Add Python 3.x to PATH**' 옵션을 **반드시** 체크
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7f76ad8e-6f8d-4068-a8fd-1079a539f64b/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7f76ad8e-6f8d-4068-a8fd-1079a539f64b/Untitled.png)
+![Untitled (1)](https://user-images.githubusercontent.com/66931820/124347396-8ba6e680-dc1f-11eb-92c6-acc0b1876aa1.png)
 
 4. '**Customize installation**' 메뉴를 클릭
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/feef0588-e3fb-4582-bb3a-0bd0be9fc35f/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/feef0588-e3fb-4582-bb3a-0bd0be9fc35f/Untitled.png)
+![Untitled (2)](https://user-images.githubusercontent.com/66931820/124347398-8f3a6d80-dc1f-11eb-9de4-984610b5c1a9.png)
 
 5. 이 화면에서는 변경 없이 '**Next**' 클릭
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/62d629d4-09c4-4f0d-8622-4a2dd00ecd57/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/62d629d4-09c4-4f0d-8622-4a2dd00ecd57/Untitled.png)
+![Untitled (3)](https://user-images.githubusercontent.com/66931820/124347399-906b9a80-dc1f-11eb-954f-484236d1cd7f.png)
+
 
 6. Customize install location 입력란에 설치 경로를 **'C:\Python38**'으로 입력 후 'Install' 버튼을 클릭 
 
 만약 사용자 계정 컨트롤 팝업이 나타나면 '예' 버튼 클릭
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9afd84b5-9194-40d1-92d2-ca93b85ff612/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9afd84b5-9194-40d1-92d2-ca93b85ff612/Untitled.png)
+![Untitled (4)](https://user-images.githubusercontent.com/66931820/124347403-92355e00-dc1f-11eb-953d-334b53b8d130.png)
 
 설치 완료🙌
