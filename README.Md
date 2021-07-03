@@ -8,7 +8,7 @@
 
 (최신 버전에서는 아직 패키지 호환성 문제가 있어서 3.8.6 설치를 권장)
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d543416a-e5ef-48dd-9b63-fad16b580593/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d543416a-e5ef-48dd-9b63-fad16b580593/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/66931820/124347371-5bf7de80-dc1f-11eb-8328-2ac73c84bc4c.png)
 
 ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/055af83e-be6e-4cda-beca-48a366b78259/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/055af83e-be6e-4cda-beca-48a366b78259/Untitled.png)
 
