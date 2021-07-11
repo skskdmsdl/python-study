@@ -29,9 +29,9 @@ from random import *
 user_list = range(1, 21) # user_list에 1~20까지 숫자 생성
 user_list = list(user_list)
 
-random_list = sample(user_list, 4) # user_list에서 4명을 추첨
+shuffle(user_list) # 무작위로 순서를 바꿔줌
 
-shuffle(random_list) # 무작위로 순서를 바꿔줌
+random_list = sample(user_list, 4) # user_list에서 4명을 추첨
 
 chicken = random_list[0] # 치킨 추첨
 coffee = random_list[1:] # 커피 추첨
