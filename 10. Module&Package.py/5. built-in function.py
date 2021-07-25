@@ -1,5 +1,5 @@
 # 내장 함수
-# https://docs.python.org/3/library/functions.html
+# list of python builtins : https://docs.python.org/3/library/functions.html
 
 # input : 사용자 입력을 받는 함수
 # language = input("무슨 언어를 좋아하세요?")

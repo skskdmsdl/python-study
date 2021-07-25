@@ -9,5 +9,3 @@ def price_morning(people):
 # 군인 할인 가격
 def price_soldier(people):
     print(f"{people}명 군인 할인 가격은 {people * 4000}원 입니다.")
-
-
