@@ -15,7 +15,7 @@ print(index)
 
 print(python.find("n")) 
 print(python.find("Java")) # -1 출력
-print(python.index("Java")) # 에러남
+# print(python.index("Java")) # 에러남
 
 print(python.count("n")) 
 
