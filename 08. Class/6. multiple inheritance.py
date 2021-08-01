@@ -43,3 +43,27 @@ class FlyableAttackUnit(AttackUnit, Flyable):
 # 발키리 : 공중 공격 유닛, 한번에 14발 미사일 발사
 valkyrie = FlyableAttackUnit("발키리", 200, 6, 5)
 valkyrie.fly(valkyrie.name, "3시") # flyable class에는 name이 없기 때문에 valkyrie.name으로 가져옴.
+
+### 추가 공부 ###
+# 예제1
+# 다중 상속
+class X():
+    pass
+
+class Y():
+    pass
+
+class Z():
+    pass
+
+class A(X, Y):
+    pass
+
+class B(Y, Z):
+    pass
+
+class M(B, A, Z):
+    pass
+
+print(M.mro())
+print(A.mro())
