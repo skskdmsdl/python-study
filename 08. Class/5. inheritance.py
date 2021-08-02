@@ -69,7 +69,7 @@ class BenzCar(Car):
         self.car_name = car_name
 
     def show(self):
-        super().show()
+        print(super().show())
         return 'Car Info : %s %s %s' % (self.car_name, self.color,self.type)
 
     def show_model(self) -> None:
@@ -93,5 +93,5 @@ model3 = BenzCar("350s", 'sedan', 'silver')
 print(model3.show())
 
 # Inheritance Info
-print('Inheritance Info : ', BmwCar.mro())
+print('Inheritance Info : ', BmwCar.mro()) # object클래스는 모든 클래스의 부모
 print('Inheritance Info : ', BenzCar.mro())
