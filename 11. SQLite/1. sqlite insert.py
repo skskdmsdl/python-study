@@ -17,7 +17,7 @@ print('sqlite3.sqlite_version', sqlite3.sqlite_version)
 
 # DB생성 & Autocommit(Rollback)
 # 본인 DB 파일 경로
-conn = sqlite3.connect('E:\workspace\python-study\python_study/resource/database.db', isolation_level=None)  # Autocommit
+conn = sqlite3.connect('E:/workspace/python-study/python_study/resource/database.db', isolation_level=None)  # Autocommit
 
 # DB생성(메모리)
 # conn = sqlite3.connect(":memory:")
