@@ -1,5 +1,8 @@
 # 모듈
 
+# 모듈 사용법
+# .을 사용하여 모듈 속 함수/변수 사용 => random.randrange(0, 5)
+
 # import theater_module
 # theater_module.price(3) # 3명이서 영화 보러 갔을 때 가격
 # theater_module.price_morning(4) # 4명이서 조조 할인 영화 보러 갔을 때 가격
