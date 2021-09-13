@@ -7,8 +7,66 @@ import padas as pd
 data = pd.Series([1, 2, 3, 4])
 print(data)
 
+
 # dtype 인자로 데이터 타입을 지정할 수 있음
 import pandas as pd
 
 data = pd.Series([1, 2, 3, 4], dtype = "float")
 print(data.dtype) # float64
+
+
+# DataFrame
+# 여러 개의 Series가 모여서 행과 열을 이룬 데이터
+gdp_dict = {
+  'china': 1409250000,
+  'japan': 516700000,
+  'korea': 169320000,
+  'usa': 2041280000,
+}
+gdp = pd.Series(gdp_dict)
+
+
+country = pd.DataFrame({
+  'gdp': gdp,
+  'population': population
+})
+
+
+# Dictionary를 활용하여 DataFrame 생성 가능
+data = {
+  'country': ['china', 'japan',
+  'korea'
+  ,
+  'usa'],
+  'gdp': [1409250000, 516700000, 169320000, 2041280000],
+  'population': [141500, 12718, 5180, 32676]
+}
+
+country = pd.DataFrame(data)
+country = country.set_index('country')
+
+
+# DataFrame 속성을 확인하는 방법
+print(country.shape) # (4, 2)
+print(country.size) # 8
+print(country.ndim) # 2
+print(country.values) # [[1409250000 141500] 
+                      # [ 516700000 12718] 
+                      # [ 169320000 5180] 
+                      # [2041280000 32676]]
+ 
+
+# DataFrame의 index와 column에 이름 지정
+country.index.name = "Country" # 인덱스에 이름 지정
+country.columns.name = "Info" # 컬럼에 이름 지정
+print(country.index)
+# Index(['china', 'japan', 'korea', 'usa'], dtype='object', name='Country’)
+print(country.columns)
+# Index(['gdp', 'population'], dtype='object', name='Info')
+
+
+# 데이터 프레임 저장 및 불러오기 가능
+country.to_csv("./country.csv")
+country.to_excel("country.xlsx")
+country = pd.read_csv("./country.csv")
+country = pd.read_excel("country.xlsx")
