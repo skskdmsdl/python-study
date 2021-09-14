@@ -70,3 +70,30 @@ country.to_csv("./country.csv")
 country.to_excel("country.xlsx")
 country = pd.read_csv("./country.csv")
 country = pd.read_excel("country.xlsx")
+
+
+# 데이터 선택 및 변경하기
+# .loc : 명시적인 인덱스를 참조하는 인덱싱/슬라이싱
+country.loc['china'] # 인덱싱
+country.loc['japan':'korea', :'population'] # 슬라이싱
+
+
+# .iloc : 파이썬 스타일의 정수 인덱스 인덱싱/슬라이싱
+country.iloc[0] # 인덱싱
+country.iloc[1:3, :2] # 슬라이싱
+
+
+# 컬럼명 활용하여 DataFrame에서 데이터 선택 가능
+country
+country['gdp']
+country[['gdp']]
+
+
+# Masking 연산이나 query 함수를 활용하여 조건에 맞는 DataFrame 행 추출 가능
+country[country['population'] < 10000] # masking 연산 활용
+country.query("population > 100000") # query 함수 활용
+
+
+# Series도 numpy array처럼 연산자 활용 가능
+gdp_per_capita = country['gdp'] / country['population']
+country['gdp per capita'] = gdp_per_capita
