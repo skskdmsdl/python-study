@@ -17,3 +17,16 @@ df.sort_values('col1', ascending = False)
 
 # col2 컬럼 기준 오름차순 정렬 후 col2 컬럼 기준 내림차순 정렬
 df.sort_values(['col2', 'col1'], ascending = [True, False])
+
+
+# 데이터프레임 분석용 함수
+# count 메서드 활용하여 데이터 개수 확인 가능
+# (Default : NaN값 제외)
+data = {
+'korean': [50, 60, 70],
+'math': [10, np.nan, 40]
+}
+df = pd.DataFrame(data, index = ['a','b','c'])
+df.count(axis = 0) # 열 기준
+df.count(axis = 1) # 행 기준
+
