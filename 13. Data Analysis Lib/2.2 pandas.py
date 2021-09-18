@@ -23,10 +23,19 @@ df.sort_values(['col2', 'col1'], ascending = [True, False])
 # count 메서드 활용하여 데이터 개수 확인 가능
 # (Default : NaN값 제외)
 data = {
-'korean': [50, 60, 70],
-'math': [10, np.nan, 40]
+  'korean': [50, 60, 70],
+  'math': [10, np.nan, 40]
 }
 df = pd.DataFrame(data, index = ['a','b','c'])
 df.count(axis = 0) # 열 기준
 df.count(axis = 1) # 행 기준
 
+# max, min 메서드 활용하여 최대, 최소값 확인 가능
+# (Default : 열 기준, NaN값 제외)
+ata = {
+  'korean': [50, 60, 70],
+  'math': [10, np.nan, 40]
+}
+df = pd.DataFrame(data, index = ['a','b','c'])
+df.max() # 최댓값
+df.min() # 최솟값
