@@ -30,8 +30,7 @@ df = pd.DataFrame(data, index = ['a','b','c'])
 df.count(axis = 0) # 열 기준
 df.count(axis = 1) # 행 기준
 
-# max, min 메서드 활용하여 최대, 최소값 확인 가능
-# (Default : 열 기준, NaN값 제외)
+# max, min 메서드 활용하여 최대, 최소값 확인 가능(Default : 열 기준, NaN값 제외)
 ata = {
   'korean': [50, 60, 70],
   'math': [10, np.nan, 40]
@@ -39,3 +38,12 @@ ata = {
 df = pd.DataFrame(data, index = ['a','b','c'])
 df.max() # 최댓값
 df.min() # 최솟값
+
+# sum,mean메서드활용하여합계및평균계산(Default : 열기준,NaN값제외)
+data = {
+  'korean': [50, 60, 70],
+  'math': [10, np.nan, 40]
+}
+df = pd.DataFrame(data, index = ['a','b','c'])
+df.sum() # 합계
+df.mean() # 평균
