@@ -47,3 +47,12 @@ data = {
 df = pd.DataFrame(data, index = ['a','b','c'])
 df.sum() # 합계
 df.mean() # 평균
+
+# axis, skipna 인자 활용하여 합계 및 평균 계산(행 기준, NaN값 포함 시)
+data = {
+  'korean': [50, 60, 70],
+  'math': [10, np.nan, 40]
+}
+df = pd.DataFrame(data, index = ['a','b','c'])
+df.sum(axis = 1) # 합계
+df.mean(axis = 1, skipna = False) # 평균
