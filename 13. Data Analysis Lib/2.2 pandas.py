@@ -56,3 +56,13 @@ data = {
 df = pd.DataFrame(data, index = ['a','b','c'])
 df.sum(axis = 1) # 합계
 df.mean(axis = 1, skipna = False) # 평균
+
+# NaN값이 존재하는 column의 평균 구하여 NaN값 대체
+B_avg = df['math'].mean()
+print(B_avg) # 25.0
+
+# NaN값 대체
+df['math'] = df['math'].fillna(B_avg)
+
+# 평균
+df.mean(axis = 1, skipna = False) 
