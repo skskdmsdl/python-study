@@ -66,3 +66,14 @@ df['math'] = df['math'].fillna(B_avg)
 
 # 평균
 df.mean(axis = 1, skipna = False) 
+
+
+# 그룹으로 묶기(group by)
+# 간단한 집계를 넘어서서 조건부로 집계하고 싶은 경우
+df = pd.DataFrame({
+  'data1' : range(6),
+  'data2' : [4,4,6,0,6,1],
+  'key':['A','B','C','A','B','C']
+})
+df.groupby('key').sum() #1번
+df.groupby(['key','data1']).sum() #2번
