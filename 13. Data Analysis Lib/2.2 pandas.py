@@ -77,3 +77,7 @@ df = pd.DataFrame({
 })
 df.groupby('key').sum() #1번
 df.groupby(['key','data1']).sum() #2번
+
+# groupby를 통해서 집계를 한번에 계산하는 방법
+df.groupby('key').aggregate(['min', np.median, max]) #1번
+df.groupby('key').aggregate({'data1': 'min', 'data2': np.sum}) #2번
