@@ -87,3 +87,6 @@ def filter_by_mean(x):
   return x['data2'].mean() > 3
 df.groupby('key').mean() #1번
 df.groupby('key').filter(filter_by_mean) #2번
+
+# groupby를 통해서 묶인 데이터에 함수 적용
+df.groupby('key').apply(lambda x: x.max() - x.min())
