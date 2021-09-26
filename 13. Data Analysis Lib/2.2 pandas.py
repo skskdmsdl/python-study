@@ -90,3 +90,14 @@ df.groupby('key').filter(filter_by_mean) #2번
 
 # groupby를 통해서 묶인 데이터에 함수 적용
 df.groupby('key').apply(lambda x: x.max() - x.min())
+
+# groupby로 묶인 데이터에서 key값으로 데이터를 가져올 수 있음
+df = pd.read_csv("./univ.csv")
+
+# 상위 5개 데이터
+df.head()
+
+# 데이터 추출
+df.groupby("시도").get_group("충남")
+len(df.groupby("시도").get_group("충남"))
+# 94
