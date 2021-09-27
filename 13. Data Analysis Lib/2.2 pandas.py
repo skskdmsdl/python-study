@@ -31,7 +31,7 @@ df.count(axis = 0) # 열 기준
 df.count(axis = 1) # 행 기준
 
 # max, min 메서드 활용하여 최대, 최소값 확인 가능(Default : 열 기준, NaN값 제외)
-ata = {
+data = {
   'korean': [50, 60, 70],
   'math': [10, np.nan, 40]
 }
