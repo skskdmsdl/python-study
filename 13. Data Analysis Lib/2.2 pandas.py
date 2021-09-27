@@ -75,18 +75,18 @@ df = pd.DataFrame({
   'data2' : [4,4,6,0,6,1],
   'key':['A','B','C','A','B','C']
 })
-df.groupby('key').sum() #1번
-df.groupby(['key','data1']).sum() #2번
+df.groupby('key').sum()
+df.groupby(['key','data1']).sum()
 
 # groupby를 통해서 집계를 한번에 계산하는 방법
-df.groupby('key').aggregate(['min', np.median, max]) #1번
-df.groupby('key').aggregate({'data1': 'min', 'data2': np.sum}) #2번
+df.groupby('key').aggregate(['min', np.median, max])
+df.groupby('key').aggregate({'data1': 'min', 'data2': np.sum})
 
 # groupby를 통해서 그룹 속성을 기준으로 데이터 필터링
 def filter_by_mean(x):
   return x['data2'].mean() > 3
-df.groupby('key').mean() #1번
-df.groupby('key').filter(filter_by_mean) #2번
+df.groupby('key').mean()
+df.groupby('key').filter(filter_by_mean)
 
 # groupby를 통해서 묶인 데이터에 함수 적용
 df.groupby('key').apply(lambda x: x.max() - x.min())
