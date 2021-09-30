@@ -23,3 +23,11 @@ ax.plot(x, x+4, linestyle="-.")
 # dashdot
 ax.plot(x, x+6, linestyle=":")
 # dotted
+
+# Line Color
+x = np.arange(10)
+fig, ax = plt.subplots()
+ax.plot(x, x, color="r")
+ax.plot(x, x+2, color="green")
+ax.plot(x, x+4, color="0.8")
+ax.plot(x, x+6, color="#524FA1")
