@@ -40,3 +40,10 @@ ax.plot(x, x+2, marker="o")
 ax.plot(x, x+4, marker="v")
 ax.plot(x, x+6, marker="s")
 ax.plot(x, x+8, marker="*")
+
+# 축 경계 조정하기
+x = np.linspace(0, 10, 1000)
+fig, ax = plt.subplots()
+ax.plot(x, np.sin(x))
+ax.set_xlim(-2, 12)
+ax.set_ylim(-1.5, 1.5)
