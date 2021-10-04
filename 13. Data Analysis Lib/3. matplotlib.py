@@ -47,3 +47,12 @@ fig, ax = plt.subplots()
 ax.plot(x, np.sin(x))
 ax.set_xlim(-2, 12)
 ax.set_ylim(-1.5, 1.5)
+
+# 범례
+x = np.arange(10)
+fig, ax = plt.subplots()
+ax.plot(x, x, label='y=x')
+ax.plot(x, x**2, label='y=x^2')
+ax.set_xlabel("x")
+ax.set_ylabel("y")
+ax.legend(loc='upper right', shadow=True, fancybox=True, borderpad=2)
