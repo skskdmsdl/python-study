@@ -56,3 +56,9 @@ ax.plot(x, x**2, label='y=x^2')
 ax.set_xlabel("x")
 ax.set_ylabel("y")
 ax.legend(loc='upper right', shadow=True, fancybox=True, borderpad=2)
+
+# Bar plot
+# bar
+x = np.arange(10)
+fig, ax = plt.subplots(figsize=(12, 4))
+ax.bar(x, x*2)
