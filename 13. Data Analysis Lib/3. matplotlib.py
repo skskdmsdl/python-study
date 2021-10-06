@@ -57,8 +57,21 @@ ax.set_xlabel("x")
 ax.set_ylabel("y")
 ax.legend(loc='upper right', shadow=True, fancybox=True, borderpad=2)
 
-# Bar plot
+# Bar plot1
 # bar
 x = np.arange(10)
 fig, ax = plt.subplots(figsize=(12, 4))
 ax.bar(x, x*2)
+
+# Bar plot2
+x = np.random.rand(3)
+y = np.random.rand(3)
+z = np.random.rand(3)
+data = [x, y, z]
+fig, ax = plt.subplots()
+x_ax = np.arange(3)
+for i in x_ax:
+  ax.bar(x_ax, data[i],
+  bottom=np.sum(data[:i], axis=0))
+ax.set_xticks(x_ax)
+ax.set_xticklabels(["A", "B", "C"])
