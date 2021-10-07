@@ -75,3 +75,8 @@ for i in x_ax:
   bottom=np.sum(data[:i], axis=0))
 ax.set_xticks(x_ax)
 ax.set_xticklabels(["A", "B", "C"])
+
+# Histogram
+fig, ax = plt.subplots()
+data = np.random.randn(1000)
+ax.hist(data, bins=50)
