@@ -80,3 +80,10 @@ ax.set_xticklabels(["A", "B", "C"])
 fig, ax = plt.subplots()
 data = np.random.randn(1000)
 ax.hist(data, bins=50)
+
+# Matplotlib with pandas
+df = pd.read_csv("./president_heights.csv")
+fig, ax = plt.subplots()
+ax.plot(df["order"], df["height(cm)"], label="height")
+ax.set_xlabel("order")
+ax.set_ylabel("height(cm)")
