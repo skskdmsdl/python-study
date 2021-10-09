@@ -81,9 +81,20 @@ fig, ax = plt.subplots()
 data = np.random.randn(1000)
 ax.hist(data, bins=50)
 
-# Matplotlib with pandas
+# Matplotlib with pandas1
 df = pd.read_csv("./president_heights.csv")
 fig, ax = plt.subplots()
 ax.plot(df["order"], df["height(cm)"], label="height")
 ax.set_xlabel("order")
 ax.set_ylabel("height(cm)")
+
+# Matplotlib with pandas2
+df = pd.read_csv("./data/pokemon.csv")
+fire = df[(df['Type 1']=='Fire') | ((df['Type 2'])=="Fire")]
+water = df[(df['Type 1']=='Water') | ((df['Type 2'])=="Water")]
+fig, ax = plt.subplots()
+ax.scatter(fire['Attack'], fire['Defense’], color='R', label='Fire', marker="*", s=50)
+ax.scatter(water['Attack'], water['Defense’], color='B', label="Water", s=25)
+ax.set_xlabel("Attack")
+ax.set_ylabel("Defense")
+ax.legend(loc="upper right")
