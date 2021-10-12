@@ -13,4 +13,8 @@
 from statistics import variance
 variance()
 
-
+# 표준편차
+# 분산의 단위 = 관측값의 단위의 제곱
+# 분산의 양의 제곱근은 관측값과 단위가 일치
+from statistics import stdev
+stdev()
