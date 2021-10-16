@@ -44,8 +44,16 @@ plt.hist()
 # 1) 스케일링(Scaling) - 정규화(Normalization), 표준화(Standardization)
 # 2) 범주화
 
+# 수치형 자료 변환하기 – 정규화 방식
 # 스케일링(Scaling)
 # • 변수 값의 범위 및 크기를 변환하는 방식
 # • 변수(feature) 간의 범위가 차이가 나면 사용
 # 1) 정규화(Normalization)
-#    변수 𝑋 를 정규화한 값 
+#    변수 𝑋 를 정규화한 값 𝑋′
+
+# 수치형 자료 변환하기 – 표준화 방식
+# 스케일링(Scaling)
+# • 변수 값의 범위 및 크기를 변환하는 방식
+# • 변수(feature) 간의 범위가 차이가 나면 사용
+# 2) 표준화(Standardization)
+#    변수 𝑋 를 표준화한 값 𝑋′
